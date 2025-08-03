@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>for the best girlfriend ever</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <section class = "intro">
+            <div class = "intro-content">
+                <p id = "intro-parag"></p>
+            </div>
+        </section>
+
+        <div class = "header">
+            <ul class="left">
+                <li><a href = index.html>Home</a></li>
+                <li><a href = gallery.html>Gallery</a></li>
+                <li><a href = gallery.html>Contact Me</a></li>
+            </ul>
+        </div>
+
+        <section class = "gimmicks">
+            <div class = "gimmicks-content">
+                <div class = "card date-checklist">
+                    <p>date checklist! <img src= "images-gallery/icon.png"></p>
+                    <div class = "row">
+                        <input type="text" id="input-box" placeholder="What should we do?">
+                        <button onclick="addTask()">+</button>
+                    </div>
+                    <ul id="list-container"></ul>
+                </div>
+
+                <div class = "card gallery-link">
+                    <div class = "img-cont"><a href="gallery.html"><img src="images-gallery/gallery-cover.jpeg"></a></div>
+                    <div class = "img-desc"><p>Click here for our memories!</p></div>
+                </div>
+
+                <div class = "card spotify">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5j9JnoZv8OcjjAOxefuj1l?utm_source=generator&theme=0" width="100%" height="400px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class = "gimmicks-content">
+                <div class = "card gwa-calc">
+                    <div class = "calchead">
+                        <p>YooPee GWA Calculator</p>
+                    </div>
+                    <div class = "subj">
+                        <div class = "subj-name"><p>Kasaysayan</p></div>
+                        <div class = "calc area">
+                            <select id="kas-grade">
+                                <option value="1.00">1.00</option>
+                                <option value="1.25">1.25</option>
+                                <option value="1.50">1.50</option>
+                                <option value="1.70">1.75</option>
+                                <option value="2.00">2.00</option>
+                                <option value="2.25">2.25</option>
+                                <option value="2.50">2.50</option>
+                                <option value="2.75">2.75</option>
+                                <option value="3.00">3.00</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class = "subj">
+                        <div class = "subj-name"><p>English</p></div>
+                        <div class = "calc area">
+                            <select id = "eng-grade">
+                                <option value="1.00">1.00</option>
+                                <option value="1.25">1.25</option>
+                                <option value="1.50">1.50</option>
+                                <option value="1.70">1.75</option>
+                                <option value="2.00">2.00</option>
+                                <option value="2.25">2.25</option>
+                                <option value="2.50">2.50</option>
+                                <option value="2.75">2.75</option>
+                                <option value="3.00">3.00</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class = "subj">
+                        <div class = "subj-name"><p>Math 10</p></div>
+                        <div class = "calc area">
+                            <select id="math-grade">
+                                <option value="1.00">1.00</option>
+                                <option value="1.25">1.25</option>
+                                <option value="1.50">1.50</option>
+                                <option value="1.70">1.75</option>
+                                <option value="2.00">2.00</option>
+                                <option value="2.25">2.25</option>
+                                <option value="2.50">2.50</option>
+                                <option value="2.75">2.75</option>
+                                <option value="3.00">3.00</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class = "subj">
+                        <div class = "subj-name"><p>CTRA</p></div>
+                        <div class = "calc area">
+                            <select id="ctra-grade">
+                                <option value="1.00">1.00</option>
+                                <option value="1.25">1.25</option>
+                                <option value="1.50">1.50</option>
+                                <option value="1.70">1.75</option>
+                                <option value="2.00">2.00</option>
+                                <option value="2.25">2.25</option>
+                                <option value="2.50">2.50</option>
+                                <option value="2.75">2.75</option>
+                                <option value="3.00">3.00</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class = "subj">
+                        <div class = "subj-name"><p>FLCD 100</p></div>
+                        <div class = "calc area">
+                            <select id="flcd100-grade">
+                                <option value="1.00">1.00</option>
+                                <option value="1.25">1.25</option>
+                                <option value="1.50">1.50</option>
+                                <option value="1.70">1.75</option>
+                                <option value="2.00">2.00</option>
+                                <option value="2.25">2.25</option>
+                                <option value="2.50">2.50</option>
+                                <option value="2.75">2.75</option>
+                                <option value="3.00">3.00</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class = "subj">
+                        <div class = "subj-name"><p>FLCD 101 </p></div>
+                        <div class = "calc-area">
+                            <select id="flcd101-grade">
+                                <option value="1.00">1.00</option>
+                                <option value="1.25">1.25</option>
+                                <option value="1.50">1.50</option>
+                                <option value="1.70">1.75</option>
+                                <option value="2.00">2.00</option>
+                                <option value="2.25">2.25</option>
+                                <option value="2.50">2.50</option>
+                                <option value="2.75">2.75</option>
+                                <option value="3.00">3.00</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="final-gwa">
+                        <input id="display" readonly>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background: radial-gradient(circle,rgba(204, 59, 187, 1) 0%, rgba(238, 174, 202, 1) 100%);
+}
+
+a {
+    text-decoration: none;
+}
+/* header */
+
+.header {
+    display: flex;
+    height: 50px;
+    width: auto;
+    background: rgb(120, 120, 120);
+    position:sticky;
+    top: 0;
+    z-index:99999;
+}
+
+.header .left{
+    align-items: center;
+    padding:0;
+    display: flex;
+    list-style-type: none;
+}
+
+.header .left li {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.header .left li a {
+    color: white;
+}
+
+.header .left li a:hover {
+    color: lightblue;
+}
+
+/* intro */
+
+.intro {
+    min-height: 100dvh;
+    min-height: 100vh;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: min(200px, 10%);
+}
+
+#intro-parag {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* gimmicks */
+
+.gimmicks {
+    display: flex;
+    flex-direction: column;
+}
+
+.gimmicks-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px 0px;
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    border-style: solid;
+    transition: 0.2s ease-in;
+    margin: 10px 0px;
+    padding: 20px;
+}
+
+.card:hover {
+    transition: 0.2s ease-in;
+    transform: scale(1.05);
+}
+
+/* date checklist */
+
+.date-checklist{
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.date-checklist p {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: rgb(120, 120, 120, 0.2);
+}
+
+.date-checklist p img {
+    height: 30px;
+    margin-left: 5px;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#input-box {
+    flex-grow: 2;
+    border: none;
+    outline: none;
+    background-color: rgb(120, 120, 120, 0.2);
+    padding: 10px;
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(120, 120, 120, 0.2);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#list-container {
+    padding-left: 0%;
+}
+
+#list-container li{
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    background-color: rgb(120, 120, 120, 0.2);
+    font-size: 16px;
+    user-select: none;
+    position: relative;
+}
+
+#list-container li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(images-gallery/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+#list-container li.checked{
+    text-decoration: line-through;
+}
+
+#list-container li.checked::before{
+    background-image: url(images-gallery/checked.png);
+}
+
+#list-container li span{
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    color:black;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#list-container li span:hover{
+    background-color: gray;
+}
+
+::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(120, 120, 120, 0.75);
+    font-size: 16px;
+}
+
+/* gallery link*/
+.gallery-link{
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    align-items: center;
+}
+
+.img-cont img {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+}
+
+.img-desc {
+    display: flex;
+    align-items: center;
+    background-color: pink;
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* spotify */
+
+.spotify{
+    display: flex;
+    padding: 20px;
+}
+
+.gimmicks-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gimmicks2-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+/* calculator */
+
+.gwa-calc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.calchead{
+    display: flex;
+    background-color: orange;
+    padding: 0px 10px;
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+    color: white;
+}
+
+.subj{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.final-gwa {
+    display: flex;
+    justify-content: center;
+}
+
+.final-gwa input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
