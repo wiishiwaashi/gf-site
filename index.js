@@ -2,10 +2,10 @@ function sleep(ms) {
     return new Promise((resolve)=> setTimeout(resolve, ms)) 
 }
 
-const parag = "Hi beybey! 👋 As you're reading this, I hope it's on or before August 3. I've been lacking inspiration for coding projects recently, and the only thing that could motivate me enough is if it's a gift for you. So, I hope you enjoy! Sending many, many kisses. 💋"
+const parag = "Hi beybey! As you're reading this, I hope it's on or before August 3. I've been lacking inspiration for coding projects recently, and the only thing that could motivate me enough is if it's a gift for you. So, I hope you enjoy! Sending many, many kisses."
 const el = document.getElementById("intro-parag")
 
-const sleepTime = 100;
+const sleepTime = 75;
 
 const writeLoop = async() => {
     while(true){
